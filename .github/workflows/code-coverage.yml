@@ -1,0 +1,14 @@
+# Reports Go and TypeScript test code coverage for cloud data sources
+name: Code Coverage
+on:
+  pull_request:
+    paths:
+      - 'pkg/tsdb/azuremonitor'
+      - 'pkg/tsdb/cloudwatch'
+      - 'pkg/tsdb/cloudmonitoring'
+      - 'public/app/plugins/datasource/grafana-azure-monitor-datasource'
+      - 'public/app/plugins/datasource/cloudwatch'
+      - 'public/app/plugins/datasource/cloud-monitoring'
+jobs:
+  workflow-call:
+    uses: grafana/code-coverage/.github/workflows/code-coverage.yml@v0.1.0
