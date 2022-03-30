@@ -11,4 +11,4 @@ on:
       - 'public/app/plugins/datasource/cloud-monitoring/**'
 jobs:
   workflow-call:
-    uses: grafana/code-coverage/.github/workflows/code-coverage.yml@v0.1.0
+    uses: grafana/code-coverage/.github/workflows/code-coverage.yml@go1.18
